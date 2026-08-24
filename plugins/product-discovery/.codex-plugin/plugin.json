@@ -1,0 +1,39 @@
+{
+  "name": "product-discovery",
+  "version": "1.0.0",
+  "description": "Research and analysis workflows for product discovery: affinity mapping, desk research, interview planning, and data analysis.",
+  "author": {
+    "name": "Superhero.tech",
+    "email": "superhero@superhero.tech",
+    "url": "https://superhero.tech"
+  },
+  "homepage": "https://superhero.tech",
+  "repository": "https://github.com/superhero-tech/superhero-skills",
+  "license": "MIT",
+  "keywords": [
+    "product-management",
+    "discovery",
+    "research",
+    "customer-interviews",
+    "data-analysis"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Product Discovery",
+    "shortDescription": "Evidence-led product discovery workflows",
+    "longDescription": "Turn research notes, interview transcripts, business questions, and datasets into evidence-led product decisions.",
+    "developerName": "Superhero.tech",
+    "category": "Productivity",
+    "capabilities": [
+      "Read",
+      "Write",
+      "Web Search"
+    ],
+    "websiteURL": "https://superhero.tech",
+    "defaultPrompt": [
+      "Synthesize these interview transcripts with affinity mapping.",
+      "Research this product decision and challenge my assumptions.",
+      "Create an interview plan from these research notes."
+    ]
+  }
+}

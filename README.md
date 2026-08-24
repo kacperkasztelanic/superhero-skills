@@ -1,4 +1,4 @@
-# Skills for Product Builders
+# Superhero Skills
 
 AI made it cheap to generate code, designs, research and copy. It did not make product judgment cheap. Point it at the wrong problem and it will help you ship the wrong thing faster.
 
@@ -38,7 +38,70 @@ Sense -> Frame -> Prototype -> Validate -> Ship -> Learn -> repeat
 
 Traditional teams run this loop in quarters, slowed down by a handoff at every step. Product Builders can run it in days. AI accelerates all six steps, but it does not own Frame, Validate or the decision in Learn.
 
-We will add skills across the whole loop as they pass the publishing bar.
+## Available skills
+
+| Skill | What it does |
+|---|---|
+| `affinity-mapping` | Turns interview transcripts into evidenced themes, opportunities and an interactive evidence map. |
+| `desk-research` | Runs competitive and scholarly research in parallel, including disconfirming evidence. |
+| `interview-plan` | Creates research questions, a screener, an interview guide and a note-taking format. |
+| `data-analysis` | Guides analysis from a business question through data checks, exploration and recommendations. |
+
+The skills need no separate API keys. `desk-research` requires the host to have live web search available.
+
+## Installation
+
+### Claude Code
+
+Run these commands inside Claude Code:
+
+```text
+/plugin marketplace add superhero-tech/superhero-skills
+/plugin install product-discovery@superhero-skills
+```
+
+If Claude Code asks you to reload the plugin, run `/reload-plugins` or start a new session.
+
+Invoke a skill explicitly, for example:
+
+```text
+/product-discovery:affinity-mapping
+/product-discovery:desk-research
+/product-discovery:interview-plan
+/product-discovery:data-analysis
+```
+
+### Codex
+
+Run these commands in your shell:
+
+```bash
+codex plugin marketplace add superhero-tech/superhero-skills
+codex plugin add product-discovery@superhero-skills
+```
+
+Start a new Codex session after installation. You can also open `/plugins` to browse the `Superhero Skills` marketplace.
+
+Invoke a skill explicitly, for example:
+
+```text
+$product-discovery:affinity-mapping
+$product-discovery:desk-research
+$product-discovery:interview-plan
+$product-discovery:data-analysis
+```
+
+### Install individual skills
+
+To select individual skills and install them in Codex, Claude Code, OpenCode or another supported agent, use [`skills.sh`](https://skills.sh):
+
+```bash
+npx skills@latest add superhero-tech/superhero-skills
+```
+
+Add `--global` if you want the skills available across all your projects. If you use Claude Code, choose either the plugin or individual installation to avoid installing every skill twice.
+
+This repository is a standalone marketplace for Claude Code and Codex. Users add it directly from GitHub, so it does not need to be submitted to the Anthropic or OpenAI public plugin directories. Organizations can still restrict third-party marketplaces through managed settings.
 
 ## What earns a place here
 
@@ -51,48 +114,6 @@ We publish a skill only after:
 - It keeps decisions with the human where judgment matters.
 
 We do not publish demo-only workflows or add skills to make the catalogue look bigger. A skill stays in the lab until it meets this bar.
-
-## Installation (30-second setup)
-
-Once the first skills are published, pick one of two routes. The Claude Code plugin installs the full set as one managed bundle. [`skills.sh`](https://skills.sh) lets you choose individual skills and the agents to install them for. If you use Claude Code, pick one route: installing both gives you every skill twice.
-
-<details>
-<summary><strong>Claude Code plugin</strong></summary>
-
-Add the marketplace, then install the plugin:
-
-```text
-/plugin marketplace add superhero-tech/superhero-skills
-/plugin install product-discovery@superhero-plugins
-```
-
-Plugin skills use namespaced commands such as `/product-discovery:interview-plan`.
-
-</details>
-
-<details>
-<summary><strong>Codex, Claude Code, OpenCode and other agents</strong></summary>
-
-```bash
-npx skills@latest add superhero-tech/superhero-skills
-```
-
-Pick the skills you want and the coding agents to install them in. Add `--global` if you want the skills available across all your projects.
-
-</details>
-
-<details>
-<summary><strong>For tinkerers</strong></summary>
-
-Use the same installer with any supported agent:
-
-```bash
-npx skills@latest add superhero-tech/superhero-skills
-```
-
-It installs ordinary files you can read and change. Pull updates when you want them with `npx skills update`.
-
-</details>
 
 Everything in this repository is released under the [MIT License](LICENSE). You can copy the skills, modify them, use them commercially and make them your own.
 

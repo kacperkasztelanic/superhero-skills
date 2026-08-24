@@ -1,0 +1,20 @@
+{
+  "name": "product-discovery",
+  "version": "1.0.0",
+  "description": "Research and analysis workflows for product discovery: affinity mapping, desk research, interview planning, and data analysis.",
+  "author": {
+    "name": "Superhero.tech",
+    "email": "superhero@superhero.tech",
+    "url": "https://superhero.tech"
+  },
+  "homepage": "https://superhero.tech",
+  "repository": "https://github.com/superhero-tech/superhero-skills",
+  "license": "MIT",
+  "keywords": [
+    "product-management",
+    "discovery",
+    "research",
+    "customer-interviews",
+    "data-analysis"
+  ]
+}

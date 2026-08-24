@@ -1,0 +1,30 @@
+{
+  "name": "superhero-skills",
+  "owner": {
+    "name": "Superhero.tech",
+    "email": "superhero@superhero.tech",
+    "url": "https://superhero.tech"
+  },
+  "description": "Product discovery skills for product builders, from the team behind AI Product Heroes.",
+  "plugins": [
+    {
+      "name": "product-discovery",
+      "displayName": "Product Discovery",
+      "source": "./plugins/product-discovery",
+      "description": "Research and analysis workflows for product discovery: affinity mapping, desk research, interview planning, and data analysis.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Superhero.tech",
+        "email": "superhero@superhero.tech",
+        "url": "https://superhero.tech"
+      },
+      "category": "product-management",
+      "tags": [
+        "discovery",
+        "research",
+        "customer-interviews",
+        "data-analysis"
+      ]
+    }
+  ]
+}
