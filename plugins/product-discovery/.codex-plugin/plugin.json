@@ -34,6 +34,8 @@
       "Synthesize these interview transcripts with affinity mapping.",
       "Research this product decision and challenge my assumptions.",
       "Create an interview plan from these research notes."
-    ]
+    ],
+    "composerIcon": "./assets/superhero-logo.png",
+    "logo": "./assets/superhero-logo.png"
   }
 }
