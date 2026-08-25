@@ -51,6 +51,30 @@ The skills need no separate API keys. `desk-research` requires the host to have 
 
 ## Installation
 
+If you use a desktop app, you can add the marketplace from the interface without cloning this repository or using a terminal.
+
+### ChatGPT Desktop
+
+Add the marketplace directly from the app:
+
+1. Open **Plugins** from the left sidebar.
+2. Select **Add+** in the top-right corner.
+3. Select **Add marketplace**.
+4. Paste [https://github.com/superhero-tech/superhero-skills/](https://github.com/superhero-tech/superhero-skills/) and confirm.
+5. The **Superhero.tech** marketplace is now available in Plugins.
+6. Install any available plugin, for example **Product Discovery**.
+
+### Claude Desktop
+
+Add the marketplace directly from the app:
+
+1. Select your username in the bottom-right corner, then select **Settings**.
+2. Select **Plugins**.
+3. Select **Add+** in the top-right corner.
+4. Paste [https://github.com/superhero-tech/superhero-skills/](https://github.com/superhero-tech/superhero-skills/) and confirm.
+5. The **Superhero.tech** marketplace is now available in Plugins.
+6. Install any available plugin, for example **Product Discovery**.
+
 ### Claude Code
 
 Run these commands inside Claude Code:
@@ -101,7 +125,7 @@ npx skills@latest add superhero-tech/superhero-skills
 
 Add `--global` if you want the skills available across all your projects. If you use Claude Code, choose either the plugin or individual installation to avoid installing every skill twice.
 
-This repository is a standalone marketplace for Claude Code and Codex. Users add it directly from GitHub, so it does not need to be submitted to the Anthropic or OpenAI public plugin directories. Organizations can still restrict third-party marketplaces through managed settings.
+This repository is a standalone marketplace for ChatGPT, Claude and Codex. Users add it directly from GitHub, so it does not need to be submitted to the Anthropic or OpenAI public plugin directories. Organizations can still restrict third-party marketplaces through managed settings.
 
 ## What earns a place here
 
