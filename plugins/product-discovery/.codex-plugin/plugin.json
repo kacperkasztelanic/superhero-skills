@@ -1,7 +1,7 @@
 {
   "name": "product-discovery",
-  "version": "1.0.0",
-  "description": "Research and analysis workflows for product discovery: affinity mapping, desk research, interview planning, and data analysis.",
+  "version": "1.1.0",
+  "description": "Research and analysis workflows for product discovery: public customer research, affinity mapping, desk research, interview planning, and data analysis.",
   "author": {
     "name": "Superhero.tech",
     "email": "superhero@superhero.tech",
@@ -15,13 +15,14 @@
     "discovery",
     "research",
     "customer-interviews",
-    "data-analysis"
+    "data-analysis",
+    "customer-research"
   ],
   "skills": "./skills/",
   "interface": {
     "displayName": "Product Discovery",
     "shortDescription": "Evidence-led product discovery workflows",
-    "longDescription": "Turn research notes, interview transcripts, business questions, and datasets into evidence-led product decisions.",
+    "longDescription": "Turn public customer opinions, research notes, interview transcripts, business questions, and datasets into evidence-led product decisions.",
     "developerName": "Superhero.tech",
     "category": "Productivity",
     "capabilities": [
@@ -33,7 +34,8 @@
     "defaultPrompt": [
       "Synthesize these interview transcripts with affinity mapping.",
       "Research this product decision and challenge my assumptions.",
-      "Create an interview plan from these research notes."
+      "Create an interview plan from these research notes.",
+      "Find public customer opinions about this product and create a short report with grouped quotes."
     ],
     "composerIcon": "./assets/superhero-logo.png",
     "logo": "./assets/superhero-logo.png"

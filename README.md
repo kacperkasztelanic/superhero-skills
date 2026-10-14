@@ -42,12 +42,17 @@ Traditional teams run this loop in quarters, slowed down by a handoff at every s
 
 | Skill | What it does |
 |---|---|
+| `customer-research` | Finds public customer opinions and delivers a short report, sourced CSV, and HTML with grouped quotes and mention counts. |
 | `affinity-mapping` | Turns interview transcripts into evidenced themes, opportunities and an interactive evidence map. |
 | `desk-research` | Runs competitive and scholarly research in parallel, including disconfirming evidence. |
 | `interview-plan` | Creates research questions, a screener, an interview guide and a note-taking format. |
 | `data-analysis` | Guides analysis from a business question through data checks, exploration and recommendations. |
 
-The skills need no separate API keys. `desk-research` requires the host to have live web search available.
+The skills need no separate API keys. `desk-research` and `customer-research` require the host to have live web search available.
+
+### Customer research
+
+`customer-research` aims to collect about 100 verified, deduplicated public customer opinions. It produces `raport.md` (up to 700 words), `cytaty.csv` with sources and context, and a standalone `raport.html` with a summary and quotes grouped by theme. Each reported problem includes a mention count with its denominator. When accessible evidence falls short, the report states the actual sample size and gaps.
 
 ## Installation
 
@@ -89,6 +94,7 @@ If Claude Code asks you to reload the plugin, run `/reload-plugins` or start a n
 Invoke a skill explicitly, for example:
 
 ```text
+/product-discovery:customer-research
 /product-discovery:affinity-mapping
 /product-discovery:desk-research
 /product-discovery:interview-plan
@@ -109,6 +115,7 @@ Start a new Codex session after installation. You can also open `/plugins` to br
 Invoke a skill explicitly, for example:
 
 ```text
+$product-discovery:customer-research
 $product-discovery:affinity-mapping
 $product-discovery:desk-research
 $product-discovery:interview-plan

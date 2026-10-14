@@ -1,7 +1,7 @@
 {
   "name": "product-discovery",
-  "version": "1.0.0",
-  "description": "Research and analysis workflows for product discovery: affinity mapping, desk research, interview planning, and data analysis.",
+  "version": "1.1.0",
+  "description": "Research and analysis workflows for product discovery: public customer research, affinity mapping, desk research, interview planning, and data analysis.",
   "author": {
     "name": "Superhero.tech",
     "email": "superhero@superhero.tech",
@@ -15,6 +15,7 @@
     "discovery",
     "research",
     "customer-interviews",
-    "data-analysis"
+    "data-analysis",
+    "customer-research"
   ]
 }
