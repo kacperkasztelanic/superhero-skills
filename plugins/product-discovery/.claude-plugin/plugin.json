@@ -1,6 +1,6 @@
 {
   "name": "product-discovery",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "Product discovery and prototyping workflows: public customer research, affinity mapping, desk research, interview planning, data analysis, and art-directed landing pages.",
   "author": {
     "name": "Superhero.tech",
@@ -18,5 +18,10 @@
     "data-analysis",
     "customer-research",
     "landing-page"
-  ]
+  ],
+  "skills": [
+    "./skills/product-discovery/",
+    "./skills/product-design/"
+  ],
+  "displayName": "Superhero Skills"
 }
