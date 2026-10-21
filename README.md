@@ -40,6 +40,10 @@ Traditional teams run this loop in quarters, slowed down by a handoff at every s
 
 ## Available skills
 
+**Superhero Skills** is one plugin with two skill folders: **Product Discovery** and **Product Design**. The technical installation ID and command namespace remain `product-discovery`, so existing installations can update normally. Folder grouping organizes the repository; the host may display a flat list of skills.
+
+### Product Discovery
+
 | Skill | What it does |
 |---|---|
 | `customer-research` | Finds public customer opinions and delivers a short report, sourced CSV, and HTML with grouped quotes and mention counts. |
@@ -47,6 +51,11 @@ Traditional teams run this loop in quarters, slowed down by a handoff at every s
 | `desk-research` | Runs competitive and scholarly research in parallel, including disconfirming evidence. |
 | `interview-plan` | Creates research questions, a screener, an interview guide and a note-taking format. |
 | `data-analysis` | Guides analysis from a business question through data checks, exploration and recommendations. |
+
+### Product Design
+
+| Skill | What it does |
+|---|---|
 | `super-landing-page` | Builds a distinctive landing page through a guided interview, independent art direction, a detailed execution prompt, and visual iteration. |
 
 The skills need no separate API keys. `desk-research` and `customer-research` require the host to have live web search available.
@@ -55,9 +64,11 @@ The skills need no separate API keys. `desk-research` and `customer-research` re
 
 `customer-research` aims to collect about 100 verified, deduplicated public customer opinions. It produces `raport.md` (up to 700 words), `cytaty.csv` with sources and context, and a standalone `raport.html` with a summary and quotes grouped by theme. Each reported problem includes a mention count with its denominator. When accessible evidence falls short, the report states the actual sample size and gaps.
 
-### Super Landing Page
+### Super Landing Page workflow
 
 `super-landing-page` asks one question at a time in chat, with the complete set of options and a recommendation. It turns the answers into a brief, project-specific art direction, and a self-contained execution prompt, then builds and checks a responsive page. Composition, motion, palette, and supporting details follow the chosen concept. Conversation and artifacts use your language. You can also request only the prompt and specification.
+
+The source folders are `plugins/product-discovery/skills/product-discovery/` and `plugins/product-discovery/skills/product-design/`. Both are explicitly declared in the plugin manifests.
 
 ## Installation
 
@@ -72,7 +83,7 @@ Add the marketplace directly from the app:
 3. Select **Add marketplace**.
 4. Paste [https://github.com/superhero-tech/superhero-skills/](https://github.com/superhero-tech/superhero-skills/) and confirm.
 5. The **Superhero.tech** marketplace is now available in Plugins.
-6. Install any available plugin, for example **Product Discovery**.
+6. Install **Superhero Skills**.
 
 ### Claude Desktop
 
@@ -83,7 +94,7 @@ Add the marketplace directly from the app:
 3. Select **Add+** in the top-right corner.
 4. Paste [https://github.com/superhero-tech/superhero-skills/](https://github.com/superhero-tech/superhero-skills/) and confirm.
 5. The **Superhero.tech** marketplace is now available in Plugins.
-6. Install any available plugin, for example **Product Discovery**.
+6. Install **Superhero Skills**.
 
 ### Claude Code
 
