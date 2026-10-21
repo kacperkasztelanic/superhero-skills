@@ -1,7 +1,7 @@
 {
   "name": "product-discovery",
-  "version": "1.1.0",
-  "description": "Research and analysis workflows for product discovery: public customer research, affinity mapping, desk research, interview planning, and data analysis.",
+  "version": "1.2.0",
+  "description": "Product discovery and prototyping workflows: public customer research, affinity mapping, desk research, interview planning, data analysis, and art-directed landing pages.",
   "author": {
     "name": "Superhero.tech",
     "email": "superhero@superhero.tech",
@@ -16,13 +16,14 @@
     "research",
     "customer-interviews",
     "data-analysis",
-    "customer-research"
+    "customer-research",
+    "landing-page"
   ],
   "skills": "./skills/",
   "interface": {
     "displayName": "Product Discovery",
-    "shortDescription": "Evidence-led product discovery workflows",
-    "longDescription": "Turn public customer opinions, research notes, interview transcripts, business questions, and datasets into evidence-led product decisions.",
+    "shortDescription": "Product discovery and landing-page workflows",
+    "longDescription": "Turn customer opinions, research notes, interview transcripts, business questions, and datasets into evidence-led decisions. Build a distinctive landing page through a guided brief, independent art direction, and visual iteration.",
     "developerName": "Superhero.tech",
     "category": "Productivity",
     "capabilities": [

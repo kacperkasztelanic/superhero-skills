@@ -11,8 +11,8 @@
       "name": "product-discovery",
       "displayName": "Product Discovery",
       "source": "./plugins/product-discovery",
-      "description": "Research and analysis workflows for product discovery: public customer research, affinity mapping, desk research, interview planning, and data analysis.",
-      "version": "1.1.0",
+      "description": "Product discovery and prototyping workflows: public customer research, affinity mapping, desk research, interview planning, data analysis, and art-directed landing pages.",
+      "version": "1.2.0",
       "author": {
         "name": "Superhero.tech",
         "email": "superhero@superhero.tech",
@@ -24,7 +24,8 @@
         "research",
         "customer-interviews",
         "data-analysis",
-        "customer-research"
+        "customer-research",
+        "landing-page"
       ]
     }
   ]
